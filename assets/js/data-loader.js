@@ -63,12 +63,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       /* =====================================================
+   COUNTDOWN DESDE JSON
+   ===================================================== */
+
+      if (data.hero?.date && typeof startCountdown === "function") {
+        startCountdown(data.hero.date);
+      }
+
+      /* =====================================================
          PRESENTACIÓN
          ===================================================== */
 
       const presentationTitle = document.getElementById("presentationTitle");
       const presentationParents = document.getElementById(
-        "presentationParents"
+        "presentationParents",
       );
       const presentationText = document.getElementById("presentationText");
       const presentationIcon = document.getElementById("presentationIcon");
@@ -156,17 +164,19 @@ document.addEventListener("DOMContentLoaded", () => {
           timelineContainer.innerHTML += `
             <div class="timeline-row ${i % 2 ? "is-flip" : ""}">
               <div class="timeline-side timeline-side--left">
-                ${i % 2 === 0
-              ? `<img class="timeline-icon" src="${item.icon}">`
-              : `<div class="timeline-text"><span class="time">${item.time}</span>${item.text}</div>`
-            }
+                ${
+                  i % 2 === 0
+                    ? `<img class="timeline-icon" src="${item.icon}">`
+                    : `<div class="timeline-text"><span class="time">${item.time}</span>${item.text}</div>`
+                }
               </div>
               <div class="timeline-center"><span class="timeline-point"></span></div>
               <div class="timeline-side timeline-side--right">
-                ${i % 2
-              ? `<img class="timeline-icon" src="${item.icon}">`
-              : `<div class="timeline-text"><span class="time">${item.time}</span>${item.text}</div>`
-            }
+                ${
+                  i % 2
+                    ? `<img class="timeline-icon" src="${item.icon}">`
+                    : `<div class="timeline-text"><span class="time">${item.time}</span>${item.text}</div>`
+                }
               </div>
             </div>
           `;
@@ -255,7 +265,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (galleryTitle) galleryTitle.innerHTML = data.gallery?.title || "";
 
       if (galleryGrid && data.gallery?.type) {
-
         galleryGrid.innerHTML = "";
         galleryGrid.classList.remove("gallery-wishes");
 
@@ -263,7 +272,6 @@ document.addEventListener("DOMContentLoaded", () => {
            IMAGES
            ========================= */
         if (data.gallery.type === "images" && data.gallery.images?.length) {
-
           data.gallery.images.forEach((img) => {
             galleryGrid.innerHTML += `<img src="${img}">`;
           });
@@ -271,13 +279,14 @@ document.addEventListener("DOMContentLoaded", () => {
           if (window.initGallery) {
             initGallery();
           }
-        }
+        } else if (
 
         /* =========================
            WISHES
            ========================= */
-        else if (data.gallery.type === "wishes" && data.gallery.items?.length) {
-
+          data.gallery.type === "wishes" &&
+          data.gallery.items?.length
+        ) {
           galleryGrid.classList.add("gallery-wishes");
 
           data.gallery.items.forEach((wish) => {
@@ -287,16 +296,14 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
           });
-        }
+        } else {
 
         /* =========================
            VACÍO
            ========================= */
-        else {
           gallerySection.style.display = "none";
         }
       }
-
 
       /* =====================================================
          RSVP (FORM + QR)
