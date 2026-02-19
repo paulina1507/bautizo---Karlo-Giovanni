@@ -119,7 +119,7 @@
   },
   "celebration": {
     "title": "Un día de fe y amor",
-    "text": "Acompáñanos a celebrar este momento tan importante en la vida espiritual de Mateo."
+    "text": "Acompáñanos a celebrar este momento tan importante y significativo para nuestra familia."
   },
   "dresscode": {
     "title": "Código de Vestimenta",
@@ -149,7 +149,7 @@
         "Sí asistiré",
         "No podré asistir"
       ],
-      "messagePlaceholder": "Mensaje o bendición para Mateo",
+      "messagePlaceholder": "Mensaje o bendición",
       "buttonText": "Confirmar asistencia"
     },
     "assigned": {
@@ -162,7 +162,7 @@
     "success": "¡Gracias por confirmar! Que Dios te bendiga."
   },
   "footer": {
-    "names": "Bautizo de Mateo",
+    "names": "Bautizo de Karlo Giovanni",
     "credits": "Diseñado con amor por Shiny Maker Events"
   }
 }
