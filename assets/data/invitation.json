@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "pageTitle": "Bautizo de Karlo Giovanni"
+  },
+  "site": {
+    "couple": "Karlo Giovanni"
+  },
+  "nav": {
+    "left": [
+      {
+        "label": "Inicio",
+        "href": "#hero"
+      },
+      {
+        "label": "Presentación",
+        "href": "#presentation"
+      },
+      {
+        "label": "Ceremonia",
+        "href": "#location"
+      }
+    ],
+    "right": [
+      {
+        "label": "Programa",
+        "href": "#timeline"
+      },
+      {
+        "label": "Vestimenta",
+        "href": "#dresscode"
+      },
+      {
+        "label": "Confirmación",
+        "href": "#rsvp"
+      }
+    ]
+  },
+  "music": {
+    "src": "assets/audio/cancion.mp3",
+    "autoplay": true
+  },
+  "hero": {
+    "pretitle": "Santo Bautismo",
+    "names": "Karlo Giovanni",
+    "date": "2026-03-21T14:00:00",
+    "background": "assets/img/hero.png"
+  },
+  "presentation": {
+    "title": "Con la gracia de Dios",
+    "parents": [
+      {
+        "names": [
+          "Saul Enríquez",
+          "Paola Yereth"
+        ],
+        "note": "Papás"
+      }
+    ],
+    "padrinos": [
+      {
+        "names": [
+          "Charlie Enríquez",
+          "Monserrat Alejo"
+        ],
+        "note": "Padrinos de Bautizo"
+      }
+    ],
+    "text": "Llenos de fe y amor, presentamos ante Dios a nuestro hijo para recibir el Sacramento del Bautismo y te invitamos a acompañarnos en este momento tan especial.",
+    "icon": "assets/img/cruz.svg"
+  },
+  "gratitude": {
+    "title": "Con gratitud",
+    "text": "Agradecemos a Dios y a cada uno de ustedes por acompañarnos en este día tan especial para nuestra familia."
+  },
+  "location": {
+    "title": "Ceremonia y celebración",
+    "subtitle": "Fecha y ubicación",
+    "dateText": "21 · Marzo · 2026",
+    "places": [
+      {
+        "title": "Ceremonia Religiosa",
+        "time": "14:00 Hrs.",
+        "image": "assets/img/ceremonia.png",
+        "place": "Parroquia de San Miguel Xaltepec",
+        "address": "C. 2 Sur 103, Centro, 75505 San Miguel Xaltepec, Pue.",
+        "map": "https://maps.app.goo.gl/zqq54URViyfLcH8N8"
+      },
+      {
+        "title": "Celebración",
+        "time": "15:30 Hrs.",
+        "image": "assets/img/recepcion.png",
+        "place": "Atrás de gasolinera Servicios Turísticos Enríquez",
+        "address": "Autop. Orizaba - Puebla kilómetro 193, 75467 Guadalupe Enríquez, Pue.",
+        "map": "https://maps.app.goo.gl/JpyZVT37avEF2cUP9"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Programa",
+    "items": [
+      {
+        "time": "14:00 hrs.",
+        "text": "Celebración del Sacramento del Bautismo",
+        "icon": "assets/img/3.svg"
+      },
+      {
+        "time": "15:30 hrs.",
+        "text": "Recepción",
+        "icon": "assets/img/6.svg"
+      },
+      {
+        "time": "16:00 hrs.",
+        "text": "Comida",
+        "icon": "assets/img/7.svg"
+      }
+    ]
+  },
+  "celebration": {
+    "title": "Un día de fe y amor",
+    "text": "Acompáñanos a celebrar este momento tan importante en la vida espiritual de Mateo."
+  },
+  "dresscode": {
+    "title": "Código de Vestimenta",
+    "type": "Formal",
+    "image": "assets/img/9.svg",
+    "menTitle": "",
+    "womenTitle": "",
+    "men": [],
+    "women": [],
+    "note": "Te invitamos a asistir con un atuendo formal y respetuoso, acorde a la ceremonia religiosa."
+  },
+  "gallery": {
+    "title": "Deseos para Karlo Giovanni",
+    "type": "wishes",
+    "items": [
+      "Que Dios ilumine cada paso que des.",
+      "Que tu vida esté llena de amor y alegría.",
+      "Que nunca te falte fe ni esperanza."
+    ]
+  },
+  "rsvp": {
+    "title": "Confirmación de Asistencia",
+    "intro": "Será un honor contar con tu presencia.",
+    "fields": {
+      "namePlaceholder": "Nombre completo",
+      "attendancePlaceholder": "¿Podrás acompañarnos?",
+      "attendanceOptions": [
+        "Sí asistiré",
+        "No podré asistir"
+      ],
+      "messagePlaceholder": "Mensaje o bendición para Mateo",
+      "buttonText": "Confirmar asistencia"
+    },
+    "assigned": {
+      "passesLabel": "Pases asignados",
+      "passesValue": "2",
+      "tableLabel": "Mesa asignada",
+      "tableValue": "Mesa 5"
+    },
+    "note": "Agradecemos confirmar antes del <strong>11 de marzo de 2026</strong>.",
+    "success": "¡Gracias por confirmar! Que Dios te bendiga."
+  },
+  "footer": {
+    "names": "Bautizo de Mateo",
+    "credits": "Diseñado con amor por Shiny Maker Events"
+  }
+}
