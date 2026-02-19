@@ -60,7 +60,9 @@
       {
         "names": [
           "Charlie Enríquez",
-          "Monserrat Alejo"
+          "Monserrat Alejo",
+          "Jesús Salinas Muñoz",
+          "Evita Muñoz"
         ],
         "note": "Padrinos de Bautizo"
       }
@@ -79,7 +81,7 @@
     "places": [
       {
         "title": "Ceremonia Religiosa",
-        "time": "14:00 Hrs.",
+        "time": "02:00 PM",
         "image": "assets/img/ceremonia.png",
         "place": "Parroquia de San Miguel Xaltepec",
         "address": "C. 2 Sur 103, Centro, 75505 San Miguel Xaltepec, Pue.",
@@ -87,9 +89,9 @@
       },
       {
         "title": "Celebración",
-        "time": "15:30 Hrs.",
+        "time": "03:30 PM",
         "image": "assets/img/recepcion.png",
-        "place": "Atrás de gasolinera Servicios Turísticos Enríquez",
+        "place": "Ubicado detrás de la gasolinera Servicios Turísticos Enríquez",
         "address": "Autop. Orizaba - Puebla kilómetro 193, 75467 Guadalupe Enríquez, Pue.",
         "map": "https://maps.app.goo.gl/JpyZVT37avEF2cUP9"
       }
@@ -99,17 +101,17 @@
     "title": "Programa",
     "items": [
       {
-        "time": "14:00 hrs.",
+        "time": "02:00 PM",
         "text": "Celebración del Sacramento del Bautismo",
         "icon": "assets/img/3.svg"
       },
       {
-        "time": "15:30 hrs.",
+        "time": "03:30 PM",
         "text": "Recepción",
         "icon": "assets/img/6.svg"
       },
       {
-        "time": "16:00 hrs.",
+        "time": "04:00 PM",
         "text": "Comida",
         "icon": "assets/img/7.svg"
       }
@@ -133,7 +135,6 @@
     "title": "Deseos para Karlo Giovanni",
     "type": "wishes",
     "items": [
-      "Que Dios ilumine cada paso que des.",
       "Que tu vida esté llena de amor y alegría.",
       "Que nunca te falte fe ni esperanza."
     ]
