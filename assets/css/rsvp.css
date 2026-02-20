@@ -428,25 +428,6 @@
     0 0 0 6px rgba(122,94,203,0.6);
 }
 
-.section--accent .rsvp-form button::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.35),
-    transparent
-  );
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.section--accent .rsvp-form button:hover::after{
-  opacity: 1;
-}
-
 /* =====================================================
    TICKET RSVP SOBRE FONDO AZUL
 ===================================================== */
