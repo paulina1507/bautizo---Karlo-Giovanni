@@ -185,14 +185,14 @@
 .flower--top {
   top: -18px;
   left: -48px;
-  background-image: url("../img/flor-izquierda.svg");
+  background-image: url("../img/flor-izquierda.png");
   transform: translateY(-80px);
 }
 
 .flower--bottom {
   bottom: -38px;
   right: -48px;
-  background-image: url("../img/flor-derecha.svg");
+  background-image: url("../img/flor-derecha.png");
   transform: translate(80px, 80px);
 }
 
