@@ -280,8 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
             initGallery();
           }
         } else if (
-
-        /* =========================
+          /* =========================
            WISHES
            ========================= */
           data.gallery.type === "wishes" &&
@@ -297,8 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
           });
         } else {
-
-        /* =========================
+          /* =========================
            VACÍO
            ========================= */
           gallerySection.style.display = "none";
@@ -306,8 +304,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       /* =====================================================
-         RSVP (FORM + QR)
-         ===================================================== */
+   RSVP – SOLO TEXTO DINÁMICO
+   ===================================================== */
 
       const rsvpTitle = document.getElementById("rsvpTitle");
       const rsvpIntro = document.getElementById("rsvpIntro");
@@ -319,12 +317,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const rsvpAttendance = document.getElementById("rsvpAttendance");
       const rsvpMessage = document.getElementById("rsvpMessage");
       const rsvpButton = document.getElementById("rsvpButton");
-
-      const rsvpExtra = document.getElementById("rsvpExtra");
-      const rsvpPassesText = document.getElementById("rsvpPassesText");
-      const rsvpTableText = document.getElementById("rsvpTableText");
-      const rsvpGuestName = document.getElementById("rsvpGuestName");
-      const rsvpQrCanvas = document.getElementById("rsvpQr");
 
       if (rsvpTitle) rsvpTitle.innerHTML = data.rsvp?.title || "";
       if (rsvpIntro) rsvpIntro.innerHTML = data.rsvp?.intro || "";
@@ -341,54 +333,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (rsvpAttendance) {
         rsvpAttendance.innerHTML = `
-          <option value="">
-            ${data.rsvp?.fields?.attendancePlaceholder || ""}
-          </option>
-        `;
+    <option value="">
+      ${data.rsvp?.fields?.attendancePlaceholder || ""}
+    </option>
+  `;
         data.rsvp?.fields?.attendanceOptions?.forEach((opt) => {
           rsvpAttendance.innerHTML += `<option>${opt}</option>`;
-        });
-      }
-
-      if (rsvpForm) {
-        rsvpForm.addEventListener("submit", (e) => {
-          e.preventDefault();
-
-          const asistencia = rsvpAttendance.value.toLowerCase();
-          const guestName = rsvpName.value.trim();
-
-          if (rsvpGuestName) rsvpGuestName.textContent = guestName;
-
-          if (asistencia.includes("sí")) {
-            if (rsvpPassesText)
-              rsvpPassesText.textContent =
-                data.rsvp?.assigned?.passesValue || "-";
-            if (rsvpTableText)
-              rsvpTableText.textContent =
-                data.rsvp?.assigned?.tableValue || "-";
-
-            rsvpExtra.classList.remove("hidden");
-
-            if (window.QRious && rsvpQrCanvas) {
-              const qrData = JSON.stringify({
-                guest: guestName,
-                passes: data.rsvp?.assigned?.passesValue,
-                table: data.rsvp?.assigned?.tableValue,
-              });
-
-              new QRious({
-                element: rsvpQrCanvas,
-                value: qrData,
-                size: 160,
-                foreground: "#5b4b8a",
-                background: "#ffffff",
-              });
-            }
-          }
-
-          rsvpSuccess.innerHTML = data.rsvp?.success || "";
-          rsvpSuccess.classList.remove("hidden");
-          rsvpForm.classList.add("hidden");
         });
       }
 

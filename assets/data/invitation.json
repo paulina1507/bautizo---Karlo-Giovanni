@@ -49,10 +49,7 @@
     "title": "Con la gracia de Dios",
     "parents": [
       {
-        "names": [
-          "Saul Enríquez",
-          "Paola Yereth"
-        ],
+        "names": ["Saul Enríquez", "Paola Yereth"],
         "note": "Papás"
       }
     ],
@@ -145,21 +142,12 @@
     "fields": {
       "namePlaceholder": "Nombre completo",
       "attendancePlaceholder": "¿Podrás acompañarnos?",
-      "attendanceOptions": [
-        "Sí asistiré",
-        "No podré asistir"
-      ],
+      "attendanceOptions": ["Sí asistiré", "No podré asistir"],
       "messagePlaceholder": "Mensaje o bendición",
-      "buttonText": "Confirmar asistencia"
-    },
-    "assigned": {
-      "passesLabel": "Pases asignados",
-      "passesValue": "2",
-      "tableLabel": "Mesa asignada",
-      "tableValue": "Mesa 5"
+      "buttonText": "Confirmar por WhatsApp"
     },
     "note": "Agradecemos confirmar antes del <strong>11 de marzo de 2026</strong>.",
-    "success": "¡Gracias por confirmar! Que Dios te bendiga."
+    "success": "Gracias por confirmar 🤍"
   },
   "footer": {
     "names": "Bautizo de Karlo Giovanni",
