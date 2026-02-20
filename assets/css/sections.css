@@ -182,18 +182,17 @@
   will-change: transform;
 }
 
-/* POSICIONES */
 .flower--top {
   top: -18px;
   left: -48px;
-  background-image: url("assets/img/flor-izquierda.svg");
+  background-image: url("../img/flor-izquierda.svg");
   transform: translateY(-80px);
 }
 
 .flower--bottom {
   bottom: -38px;
   right: -48px;
-  background-image: url("assets/img/flor-derecha.svg");
+  background-image: url("../img/flor-derecha.svg");
   transform: translate(80px, 80px);
 }
 
