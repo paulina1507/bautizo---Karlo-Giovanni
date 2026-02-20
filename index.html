@@ -292,7 +292,7 @@
 
           let textoWA = "";
 
-          if (asistencia === "Confirmo asistencia") {
+          if (asistencia === "Sí asistiré") {
             textoWA = `Hola 🤍
 Soy ${nombre}.
 Confirmo mi asistencia al evento.
@@ -311,7 +311,7 @@ Mensaje: ${mensaje || "Les mando un fuerte abrazo ✨"}`;
           if (ok) {
             ok.classList.remove("hidden");
 
-            if (asistencia === "Confirmo asistencia") {
+            if (asistencia === "Sí asistiré") {
               ok.textContent = "¡Gracias por confirmar tu asistencia! 🤍";
             } else {
               ok.textContent = "Gracias por avisarnos 🤍";
