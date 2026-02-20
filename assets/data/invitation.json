@@ -49,7 +49,10 @@
     "title": "Con la gracia de Dios",
     "parents": [
       {
-        "names": ["Saul Enríquez", "Paola Yereth"],
+        "names": [
+          "Saul Enríquez",
+          "Paola Yereth"
+        ],
         "note": "Papás"
       }
     ],
@@ -103,6 +106,11 @@
         "icon": "assets/img/3.svg"
       },
       {
+        "time": "03:00 PM",
+        "text": "Bendición y fotografías",
+        "icon": "assets/img/4.svg"
+      },
+      {
         "time": "03:30 PM",
         "text": "Recepción",
         "icon": "assets/img/6.svg"
@@ -142,7 +150,10 @@
     "fields": {
       "namePlaceholder": "Nombre completo",
       "attendancePlaceholder": "¿Podrás acompañarnos?",
-      "attendanceOptions": ["Sí asistiré", "No podré asistir"],
+      "attendanceOptions": [
+        "Sí asistiré",
+        "No podré asistir"
+      ],
       "messagePlaceholder": "Mensaje o bendición",
       "buttonText": "Confirmar por WhatsApp"
     },
