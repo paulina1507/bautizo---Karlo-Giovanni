@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return res.json();
     })
     .then((data) => {
+      window.invitationData = data;
       /* =====================================================
          🎵 MUSIC DESDE JSON (NO BORRA NADA)
          ===================================================== */
